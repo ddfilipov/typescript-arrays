@@ -1,33 +1,34 @@
+/** We're creating an array of objects and changing the value of one of the object's properties. */
 console.clear();
 
 interface IObjectInterface {
-  id: number;
-  name: string;
-  age: number;
+    id: number;
+    name: string;
+    age: number;
 }
 
 const firstArray: IObjectInterface[] = [
-  {
-    age: 111,
-    name: "aaa",
-    id: 1,
-  },
-  {
-    age: 222,
-    name: "bbb",
-    id: 2,
-  },
-  {
-    age: 333,
-    name: "ccc",
-    id: 3,
-  },
+    {
+        age: 111,
+        name: "aaa",
+        id: 1,
+    },
+    {
+        age: 222,
+        name: "bbb",
+        id: 2,
+    },
+    {
+        age: 333,
+        name: "ccc",
+        id: 3,
+    },
 ];
 
 console.log("firstArray:", firstArray);
 
 firstArray.find((element) => {
-  element.id === 2 && (element.name = "name changed")
+    element.id === 2 && (element.name = "name changed");
 });
 
 console.log("firstArray2:", firstArray);
