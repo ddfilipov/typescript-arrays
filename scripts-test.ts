@@ -1,7 +1,25 @@
 interface IObjectInterface {
+    id: number;
     name: string;
     age: number;
 }
 
-const firstArray = [{}];
-console.log("hello");
+const firstArray: IObjectInterface[] = [
+    {
+        age: 111,
+        name: "aaa",
+        id: 1,
+    },
+    {
+        age: 222,
+        name: "bbb",
+        id: 2,
+    },
+    {
+        age: 333,
+        name: "ccc",
+        id: 3,
+    },
+];
+
+console.log("hello2");
