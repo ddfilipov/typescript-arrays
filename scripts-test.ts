@@ -26,8 +26,8 @@ const firstArray: IObjectInterface[] = [
 
 console.log("firstArray:", firstArray);
 
-const findElement: IObjectInterface | undefined = firstArray.find(
-  (element: IObjectInterface) => element.id === 2
-);
+firstArray.find((element) => {
+  element.id === 2 && (element.name = "name changed")
+});
 
-console.log("findElement:", findElement);
+console.log("firstArray2:", firstArray);
