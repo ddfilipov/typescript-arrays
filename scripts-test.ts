@@ -1,25 +1,33 @@
+console.clear();
+
 interface IObjectInterface {
-    id: number;
-    name: string;
-    age: number;
+  id: number;
+  name: string;
+  age: number;
 }
 
 const firstArray: IObjectInterface[] = [
-    {
-        age: 111,
-        name: "aaa",
-        id: 1,
-    },
-    {
-        age: 222,
-        name: "bbb",
-        id: 2,
-    },
-    {
-        age: 333,
-        name: "ccc",
-        id: 3,
-    },
+  {
+    age: 111,
+    name: "aaa",
+    id: 1,
+  },
+  {
+    age: 222,
+    name: "bbb",
+    id: 2,
+  },
+  {
+    age: 333,
+    name: "ccc",
+    id: 3,
+  },
 ];
 
-console.log("hello2");
+console.log("firstArray:", firstArray);
+
+const findElement: IObjectInterface | undefined = firstArray.find(
+  (element: IObjectInterface) => element.id === 2
+);
+
+console.log("findElement:", findElement);
